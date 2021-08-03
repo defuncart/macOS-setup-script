@@ -3,7 +3,7 @@
 
 # update bash_profile
 echo '# Android' >>~/.bash_profile
-echo 'export ANDROID_SDK_ROOT=$USER/Library/Android/sdk' >>~/.bash_profile
+echo 'export ANDROID_SDK_ROOT=$USERACC/Library/Android/sdk' >>~/.bash_profile
 echo 'export ANDROID_HOME=$ANDROID_SDK_ROOT' >>~/.bash_profile
 echo 'export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools' >>~/.bash_profile
 
