@@ -26,18 +26,16 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # accessibility
-reduce transparency
-reduce motion
+# reduce transparency
+# reduce motion
 
 # password length
 sudo pwpolicy -clearaccountpolicies
 
 # use all F1, F2 as standard keys
-defaults write -g com.apple.keyboard.fnState -bool true
-
-# laptop
-brew cask install karabiner-elements
+# defaults write -g com.apple.keyboard.fnState -bool true
 
 # battery percentage
-defaults write com.apple.menuextra.battery ShowPercent YES
+# defaults write com.apple.menuextra.battery ShowPercent YES
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
 killall SystemUIServer

@@ -3,10 +3,8 @@ libraryPath=~/Desktop/Developer/Libraries
 mkdir $libraryPath
 
 # download flutter
-cd libraryPath
-git clone https://github.com/flutter/flutter.git
-cd flutter
-git checkout stable
+cd $libraryPath
+git clone https://github.com/flutter/flutter.git -b stable
 
 # update bash_profile
 echo '# Flutter' >>~/.bash_profile

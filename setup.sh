@@ -19,12 +19,14 @@ xcode-select --install
 
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$(whoami)/.bash_profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # install brews
 brew install cask
 brew install git
 brew install dockutil
-# brew install unrar # no brew found
+brew install rar
 brew install ffmpeg
 brew install youtube-dl
 brew install duti
@@ -36,34 +38,34 @@ brew install --cask github
 brew install --cask fork
 brew install --cask android-studio
 brew install --cask android-file-transfer
-# brew install --cask virtualbox # fails due to gatekeeper?
 brew install --cask vlc
-brew install --cask sensiblesidebuttons
+# brew install --cask sensiblesidebuttons
 brew install --cask db-browser-for-sqlite
+brew install --cask utm
+
+# communications
+brew install --cask slack
+brew install --cask microsoft-teams
 
 # dev tools
 
 # cocoapods
-# sudo gem install cocoapods
-# pod setup
 brew install cocoapods --build-from-source
-# brew link --overwrite cocoapods
 
-# brew install --cask java
-# export JAVA_HOME="/Library/Java/Home"
-# sudo ln -nsf $(/usr/libexec/java_home -v 1.8) $JAVA_HOME
-# brew install --cask mysides
+# keycastr
+brew install --cask keycastr
 
 # setup android
-sh scripts/android.sh
+# sh scripts/dev/android.sh
 
 # setup flutter
-sh flutter.sh
+# sh scripts/dev/flutter.sh
 
-# install python 3
-# brew install python
+# setup node
+sh scripts/dev/nodejs.sh
 
-# macOS
-sh scripts/system_settings.sh
-sh scripts/default_apps_file_types.sh
-sh scripts/dock.sh
+# system settings
+sh scripts/system/system_settings.sh
+sh scripts/system/default_apps_file_types.sh
+sh scripts/system/dock.sh
+sh scripts/system/terminal.sh

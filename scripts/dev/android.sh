@@ -1,4 +1,4 @@
-# firstly open android studio and install sdk
+# firstly open android studio and install sdk + command line tools
 # restart computer
 
 # update bash_profile
