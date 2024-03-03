@@ -12,6 +12,7 @@ echo 'export DEV_LIB=$USERACC/Desktop/Developer/Libraries' >>~/.bash_profile
 echo 'export PATH=$PATH:$DEV_LIB/flutter/bin' >>~/.bash_profile
 echo '# Dart' >>~/.bash_profile
 echo 'export PATH=$PATH:$DEV_LIB/flutter/bin/cache/dart-sdk/bin' >>~/.bash_profile
+echo 'export PATH=$PATH:$HOME/.pub-cache/bin' >>~/.bash_profile
 
 # print message
 echo 'Reload bash_profile using source ~/.bash_profile'

@@ -34,23 +34,23 @@ brew install duti
 # applications
 brew install --cask google-chrome
 brew install --cask visual-studio-code
-brew install --cask github
 brew install --cask fork
 brew install --cask android-studio
 brew install --cask android-file-transfer
 brew install --cask vlc
-# brew install --cask sensiblesidebuttons
 brew install --cask db-browser-for-sqlite
-brew install --cask utm
+brew install --cask libreoffice
 
 # communications
 brew install --cask slack
 brew install --cask microsoft-teams
 
 # dev tools
+brew install --cask chromedriver
 
 # cocoapods
 brew install cocoapods --build-from-source
+brew install swiftformat
 
 # keycastr
 brew install --cask keycastr
@@ -68,4 +68,4 @@ sh scripts/dev/nodejs.sh
 sh scripts/system/system_settings.sh
 sh scripts/system/default_apps_file_types.sh
 sh scripts/system/dock.sh
-sh scripts/system/terminal.sh
+# sh scripts/system/terminal.sh

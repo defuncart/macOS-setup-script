@@ -17,6 +17,7 @@ killall SystemUIServer
 # screenshots
 mkdir ~/Desktop/Screenshots
 defaults write com.apple.screencapture location ~/Desktop/Screenshots/
+defaults write com.apple.iphonesimulator ScreenShotSaveLocation -string ~/Desktop/Screenshots/
 killall SystemUIServer
 
 # trackpad
