@@ -28,7 +28,7 @@ brew install git
 brew install dockutil
 brew install rar
 brew install ffmpeg
-brew install youtube-dl
+brew install yt-dlp
 brew install duti
 
 # applications
@@ -44,9 +44,13 @@ brew install --cask libreoffice
 # communications
 brew install --cask slack
 brew install --cask microsoft-teams
+brew install --cask telegram
+brew install --cask whatsapp
+brew install --cask signal
 
 # dev tools
 brew install --cask chromedriver
+brew install scrcpy
 
 # cocoapods
 brew install cocoapods --build-from-source
@@ -68,4 +72,4 @@ sh scripts/dev/nodejs.sh
 sh scripts/system/system_settings.sh
 sh scripts/system/default_apps_file_types.sh
 sh scripts/system/dock.sh
-# sh scripts/system/terminal.sh
+sh scripts/system/terminal.sh

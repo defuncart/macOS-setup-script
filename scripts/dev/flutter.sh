@@ -16,3 +16,7 @@ echo 'export PATH=$PATH:$HOME/.pub-cache/bin' >>~/.bash_profile
 
 # print message
 echo 'Reload bash_profile using source ~/.bash_profile'
+
+# fvm
+brew tap leoafarias/fvm
+brew install fvm

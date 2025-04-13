@@ -8,8 +8,8 @@ fi
 dockutil --remove all --no-restart
 dockutil --add /Applications/VLC.app --no-restart
 dockutil --add /Applications/Google\ Chrome.app --no-restart
-dockutil --add /Applications/Visual\ Studio\ Code.app --no-restart
 dockutil --add /Applications/Fork.app --no-restart
+dockutil --add /Applications/Visual\ Studio\ Code.app --no-restart
 dockutil --add /Applications/Xcode.app --no-restart
 dockutil --add /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app --no-restart
 dockutil --add /Applications/Android\ Studio.app --no-restart
